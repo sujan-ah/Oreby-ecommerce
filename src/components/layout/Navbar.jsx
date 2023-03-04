@@ -5,6 +5,7 @@ import List from "./List.jsx";
 import ListItem from "./ListItem.jsx";
 import { FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Container from "./Container.jsx";
 
 const Navbar = () => {
   const [show, setShow] = useState(true);
@@ -23,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="max-w-container mx-auto p-2.5">
+      <Container>
         <Flex className="lg:flex ">
           <div className="lg:w-3/12">
             <Images imgsrc="assets/logo.png" />
@@ -57,7 +58,7 @@ const Navbar = () => {
             )}
           </div>
         </Flex>
-      </div>
+      </Container>
     </nav>
   );
 };
