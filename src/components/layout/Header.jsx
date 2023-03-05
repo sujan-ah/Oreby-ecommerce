@@ -27,12 +27,12 @@ const Header = () => {
   return (
     <div className="bg-[#F5F5F3]">
       <Container>
-        <Flex className="flex justify-between">
+        <Flex className="flex justify-between bg-slate-300">
           <div>
             <Dropdown dropref={ref}>
               <p
                 onClick={handleDropdown}
-                className="flex items-center gap-x-2.5"
+                className="flex items-center gap-x-2.5 "
               >
                 <FaBars />
                 Shop by Category
