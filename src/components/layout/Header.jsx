@@ -39,10 +39,31 @@ const Header = () => {
               </p>
 
               {show && (
-                <List className="absolute">
-                  <ListItem itemname="kdjfdk"></ListItem>
-                  <ListItem itemname="kdk"></ListItem>
-                  <ListItem itemname="kdk"></ListItem>
+                <List className="absolute bg-primary w-[263px] text-white text-opacity-70 ">
+                  <ListItem
+                    itemname="Accessories"
+                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                  ></ListItem>
+                  <ListItem
+                    itemname="Furniture"
+                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                  ></ListItem>
+                  <ListItem
+                    itemname="Electronics"
+                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                  ></ListItem>
+                  <ListItem
+                    itemname="Electronics"
+                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                  ></ListItem>
+                  <ListItem
+                    itemname="Electronics"
+                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                  ></ListItem>
+                  <ListItem
+                    itemname="Electronics"
+                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                  ></ListItem>
                 </List>
               )}
             </Dropdown>
