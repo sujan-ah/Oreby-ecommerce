@@ -23,35 +23,35 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav>
+    <nav className="py-8">
       <Container>
-        <Flex className="lg:flex ">
-          <div className="lg:w-3/12">
+        <Flex className=" lg:flex">
+          <div className=" lg:w-3/12">
             <Images imgsrc="assets/logo.png" />
           </div>
 
-          <div className="lg:w-9/12  w-full">
+          <div className="w-full lg:w-9/12">
             <FaBars
-              className="block lg:hidden ml-auto  absolute top-2.5 right-2.5"
+              className="absolute top-9 right-2.5  ml-auto block lg:hidden"
               onClick={() => setShow(!show)}
             />
 
             {show && (
-              <List className="lg:flex justify-end gap-x-10 mt-2.5 lg:mt-0 mt-5">
+              <List className="mt-10 justify-end gap-x-10 lg:mt-0 lg:flex">
                 <ListItem
-                  className="font-dm text-sm font-bold hover:font-bold my-2.5 lg:my-0"
+                  className="my-4 font-dm text-sm font-bold hover:font-bold lg:my-0"
                   itemname="Home"
                 />
                 <ListItem
-                  className="font-dm text-sm font-regular hover:font-bold my-2.5 lg:my-0 "
+                  className="font-regular my-4 font-dm text-sm hover:font-bold lg:my-0 "
                   itemname="About"
                 />
                 <ListItem
-                  className="font-dm text-sm font-regular hover:font-bold my-2.5 lg:my-0 "
+                  className="font-regular my-4 font-dm text-sm hover:font-bold lg:my-0 "
                   itemname="Service"
                 />
                 <ListItem
-                  className="font-dm text-sm font-regular hover:font-bold my-2.5 lg:my-0 "
+                  className="font-regular my-4 font-dm text-sm hover:font-bold lg:my-0 "
                   itemname="Contact"
                 />
               </List>

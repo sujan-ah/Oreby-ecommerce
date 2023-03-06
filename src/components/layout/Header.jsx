@@ -5,6 +5,7 @@ import Flex from "./Flex";
 import { FaBars } from "react-icons/fa";
 import List from "./List";
 import ListItem from "./ListItem";
+import Search from "./Search";
 
 const Header = () => {
   let [show, setShow] = useState(false);
@@ -25,10 +26,10 @@ const Header = () => {
   });
 
   return (
-    <div className="bg-[#F5F5F3]">
+    <div className="bg-[#F5F5F3] py-6">
       <Container>
-        <Flex className="flex justify-between bg-slate-300">
-          <div>
+        <Flex className="flex justify-between">
+          <div className="flex items-center">
             <Dropdown dropref={ref}>
               <p
                 onClick={handleDropdown}
@@ -39,38 +40,46 @@ const Header = () => {
               </p>
 
               {show && (
-                <List className="absolute bg-primary w-[263px] text-white text-opacity-70 ">
+                <List className="font-regular absolute w-[263px] bg-primary font-dm text-sm text-white text-opacity-70">
                   <ListItem
                     itemname="Accessories"
-                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                    className="px-4 py-4 duration-100 ease-in hover:px-7 hover:font-bold hover:text-white"
                   ></ListItem>
                   <ListItem
                     itemname="Furniture"
-                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                    className="px-4 py-4 duration-100 ease-in hover:px-7 hover:font-bold hover:text-white"
                   ></ListItem>
                   <ListItem
                     itemname="Electronics"
-                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                    className="px-4 py-4 duration-100 ease-in hover:px-7 hover:font-bold hover:text-white"
                   ></ListItem>
                   <ListItem
-                    itemname="Electronics"
-                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                    itemname="Clothes"
+                    className="px-4 py-4 duration-100 ease-in hover:px-7 hover:font-bold hover:text-white"
                   ></ListItem>
                   <ListItem
-                    itemname="Electronics"
-                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                    itemname="Bags"
+                    className="px-4 py-4 duration-100 ease-in hover:px-7 hover:font-bold hover:text-white"
                   ></ListItem>
                   <ListItem
-                    itemname="Electronics"
-                    className="px-4 py-4 hover:text-white hover:px-7 ease-in duration-300"
+                    itemname="Home appliances"
+                    className="px-4 py-4 duration-100 ease-in hover:px-7 hover:font-bold hover:text-white"
                   ></ListItem>
                 </List>
               )}
             </Dropdown>
           </div>
 
-          <h1>ami</h1>
-          <h1>ami</h1>
+          <div className="w-[600px]">
+            <Search
+              className="font-regular w-full  px-5 py-4 font-dm text-sm"
+              placeholder="Search Products"
+            />
+          </div>
+
+          <div className="flex items-center">
+            <h1>ami</h1>
+          </div>
         </Flex>
       </Container>
     </div>
