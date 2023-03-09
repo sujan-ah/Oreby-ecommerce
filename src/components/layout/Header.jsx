@@ -49,9 +49,9 @@ const Header = () => {
         <Flex className="flex justify-between">
           <div className="flex items-center">
             <Dropdown className="relative" dropref={categoryDropDownRef}>
-              <p className="flex items-center gap-x-2.5 ">
+              <p className="flex items-center gap-x-2.5">
                 <FaBars />
-                Shop by Category
+                <span className="hidden lg:inline-block">Shop by Category</span>
               </p>
 
               {categoryDropDownShow && (
@@ -85,9 +85,9 @@ const Header = () => {
             </Dropdown>
           </div>
 
-          <div className="w-[600px]">
+          <div className="w-auto lg:w-[600px] ">
             <Search
-              className="font-regular w-full  px-5 py-4 font-dm text-sm"
+              className="font-regular w-full px-5 py-4 font-dm text-sm "
               placeholder="Search Products"
             />
           </div>
@@ -118,7 +118,7 @@ const Header = () => {
                 <BsCartFill className="text-lg" />
 
                 {cartDropdownShow && (
-                  <div className="absolute top-10 right-5 w-[360px] border border-solid border-[#F0F0F0] bg-[#F5F5F3]">
+                  <div className="absolute top-10 right-0 w-[360px] border border-solid border-[#F0F0F0] bg-[#F5F5F3]">
                     <div className="bg-[#F5F5F3]  p-5">
                       <Flex className="flex ">
                         <div className=" w-[20%]">
