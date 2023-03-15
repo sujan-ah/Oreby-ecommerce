@@ -13,7 +13,7 @@ const Banner = () => {
     beforeChange: (prev, next) => {
       setSlickDotActive(next);
     },
-    Infinity: true,
+    infinite: true,
     autoplay: true,
     speed: 500,
     slidesToShow: 1,
