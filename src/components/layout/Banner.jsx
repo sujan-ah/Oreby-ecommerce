@@ -6,7 +6,7 @@ import Images from "./Images";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
-  let [slickDotActive, setSlickDotActive] = useState("");
+  let [slickDotActive, setSlickDotActive] = useState(0);
 
   var settings = {
     dots: true,
