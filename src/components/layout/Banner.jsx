@@ -23,7 +23,7 @@ const Banner = () => {
         style={{
           display: "inline-block",
           position: "absolute",
-          top: "58%",
+          top: "60%",
           left: "8%",
           transform: "translateY(-50%)",
           width: "3%",
@@ -34,7 +34,7 @@ const Banner = () => {
             margin: "0px",
             display: "flex",
             flexDirection: "column",
-            gap: "10px",
+            gap: "30px",
           }}
         >
           {" "}
@@ -50,6 +50,7 @@ const Banner = () => {
                 fontSize: "10px",
                 fontWeight: 400,
                 width: "30px",
+                height: "30px",
                 color: "#000",
                 borderRight: "3px #262626 solid",
               }
@@ -64,6 +65,114 @@ const Banner = () => {
         0{i + 1}
       </div>
     ),
+    responsive: [
+      {
+        breakpoint: 737,
+        settings: {
+          dots: true,
+          appendDots: (dots) => (
+            <div
+              style={{
+                display: "inline-block",
+                position: "absolute",
+                top: "58%",
+                left: "2%",
+                transform: "translateY(-50%)",
+                width: "3%",
+              }}
+            >
+              <ul
+                style={{
+                  margin: "0px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "2px",
+                }}
+              >
+                {" "}
+                {dots}{" "}
+              </ul>
+            </div>
+          ),
+          customPaging: (i) => (
+            <div
+              style={
+                i === slickDotActive
+                  ? {
+                      fontSize: "5px",
+                      fontWeight: 400,
+                      width: "30px",
+                      color: "#000",
+                      borderRight: "3px #262626 solid",
+                    }
+                  : {
+                      width: "30px",
+                      color: "#000",
+                      borderRight: "3px white solid",
+                      color: "transparent",
+                    }
+              }
+            >
+              0{i + 1}
+            </div>
+          ),
+        },
+      },
+
+      {
+        breakpoint: 1025,
+        settings: {
+          dots: true,
+          appendDots: (dots) => (
+            <div
+              style={{
+                display: "inline-block",
+                position: "absolute",
+                top: "55%",
+                left: "8%",
+                transform: "translateY(-50%)",
+                width: "3%",
+              }}
+            >
+              <ul
+                style={{
+                  margin: "0px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "30px",
+                }}
+              >
+                {" "}
+                {dots}{" "}
+              </ul>
+            </div>
+          ),
+          customPaging: (i) => (
+            <div
+              style={
+                i === slickDotActive
+                  ? {
+                      fontSize: "10px",
+                      fontWeight: 400,
+                      width: "30px",
+                      height: "30px",
+                      color: "#000",
+                      borderRight: "3px #262626 solid",
+                    }
+                  : {
+                      width: "30px",
+                      color: "#000",
+                      borderRight: "3px white solid",
+                      color: "transparent",
+                    }
+              }
+            >
+              0{i + 1}
+            </div>
+          ),
+        },
+      },
+    ],
   };
 
   return (
