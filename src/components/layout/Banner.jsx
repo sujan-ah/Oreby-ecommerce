@@ -179,17 +179,17 @@ const Banner = () => {
     <Slider {...settings}>
       <Link to="#">
         <div>
-          <Images imgsrc="assets/banner.png" />
+          <Images className="block" imgsrc="assets/banner.png" />
         </div>
       </Link>
       <Link to="#">
         <div>
-          <Images imgsrc="assets/banner.png" />
+          <Images className="block" imgsrc="assets/banner.png" />
         </div>
       </Link>
       <Link to="#">
         <div>
-          <Images imgsrc="assets/banner.png" />
+          <Images className="block" imgsrc="assets/banner.png" />
         </div>
       </Link>
     </Slider>
