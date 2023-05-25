@@ -14,13 +14,13 @@ const NewArrivals = () => {
             <Product src="assets/product1.png" badge={false} />
           </div>
           <div className="max-w-[370px]">
-            <Product src="assets/product1.png" badge={true} />
+            <Product src="assets/product2.png" badge={true} />
           </div>
           <div className="max-w-[370px]">
-            <Product src="assets/product1.png" badge={false} />
+            <Product src="assets/product3.png" badge={false} />
           </div>
           <div className="max-w-[370px]">
-            <Product src="assets/product1.png" badge={true} />
+            <Product src="assets/product4.png" badge={true} />
           </div>
         </Flex>
       </Container>
