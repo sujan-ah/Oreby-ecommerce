@@ -6,20 +6,20 @@ import Product from "./Product";
 
 const NewArrivals = () => {
   return (
-    <div className="mt-32">
+    <div className="md:mt-32">
       <Container>
         <Heading title="New Arrivals" />
-        <Flex className="mt-12 flex gap-x-10">
-          <div className="max-w-[370px]">
+        <Flex className="mt-3 gap-x-10 sm:flex sm:flex-wrap sm:justify-between md:mt-12	 md:flex lg:flex-nowrap ">
+          <div className="sm:max-w-[295px] lg:max-w-[370px]">
             <Product src="assets/product1.png" badge={false} />
           </div>
-          <div className="max-w-[370px]">
+          <div className="sm:max-w-[295px] lg:max-w-[370px]">
             <Product src="assets/product2.png" badge={true} />
           </div>
-          <div className="max-w-[370px]">
+          <div className="sm:max-w-[295px] lg:max-w-[370px]">
             <Product src="assets/product3.png" badge={false} />
           </div>
-          <div className="max-w-[370px]">
+          <div className="sm:max-w-[295px] lg:max-w-[370px]">
             <Product src="assets/product4.png" badge={true} />
           </div>
         </Flex>
