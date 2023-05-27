@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Advertise = () => {
   return (
-    <div className="mt-5 xl:mt-36">
+    <div className="mt-5 mb-5 md:mb-0 xl:mt-36">
       <Container>
         <Flex className="flex gap-x-5 md:gap-x-10">
           <div className="max-w-2/4">
