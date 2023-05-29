@@ -3,21 +3,21 @@ import Heading from "./Heading";
 import Container from "./Container";
 import Flex from "./Flex";
 import Product from "./Product";
-import {
-  HiOutlineArrowLongLeft,
-  HiOutlineArrowLongRight,
-} from "react-icons/hi2";
+import { CgArrowLongLeft, CgArrowLongRight } from "react-icons/cg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const NewArrivals = () => {
   var settings = {
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 2,
-    arrowLeft: true,
+    arrows: true,
+    prevArrow: <CgArrowLongLeft />,
+    nextArrow: <CgArrowLongRight />,
   };
 
   return (
@@ -67,9 +67,6 @@ const NewArrivals = () => {
               <Product src="assets/product3.png" badge={false} />
             </div>
           </Slider>
-
-          <HiOutlineArrowLongLeft className="absolute top-44 left-0 h-10 w-10 rounded-full bg-[#979797] p-3 text-white" />
-          <HiOutlineArrowLongRight className="absolute top-44 right-0 h-10 w-10  rounded-full bg-[#979797] p-3 text-white" />
         </div>
       </Container>
     </div>
