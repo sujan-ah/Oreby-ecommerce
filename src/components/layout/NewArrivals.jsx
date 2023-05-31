@@ -48,22 +48,22 @@ const NewArrivals = () => {
 
         <div className="relative hidden  lg:block">
           <Slider {...settings} className="mt-12 ">
-            <div className=" sm:max-w-[295px] lg:max-w-[370px]">
+            <div className=" sm:max-w-[295px] lg:max-w-[90%] xl:max-w-[95%]">
               <Product src="assets/product1.png" badge={false} />
             </div>
-            <div className="sm:max-w-[295px] lg:max-w-[370px]">
+            <div className="sm:max-w-[295px] lg:max-w-[90%] xl:max-w-[95%]">
               <Product src="assets/product2.png" badge={false} />
             </div>
-            <div className="sm:max-w-[295px] lg:max-w-[370px]">
+            <div className="sm:max-w-[295px] lg:max-w-[90%] xl:max-w-[95%]">
               <Product src="assets/product3.png" badge={false} />
             </div>
-            <div className="sm:max-w-[295px] lg:max-w-[370px]">
+            <div className="sm:max-w-[295px] lg:max-w-[90%] xl:max-w-[95%]">
               <Product src="assets/product4.png" badge={false} />
             </div>
-            <div className="sm:max-w-[295px] lg:max-w-[370px]">
+            <div className="sm:max-w-[295px] lg:max-w-[90%] xl:max-w-[95%]">
               <Product src="assets/product3.png" badge={false} />
             </div>
-            <div className="sm:max-w-[295px] lg:max-w-[370px]">
+            <div className="sm:max-w-[295px] lg:max-w-[90%] xl:max-w-[95%]">
               <Product src="assets/product3.png" badge={false} />
             </div>
           </Slider>
