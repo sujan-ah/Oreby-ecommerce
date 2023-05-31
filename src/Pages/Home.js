@@ -14,9 +14,9 @@ const Home = () => {
       <AdditionalInfo />
       <Advertise />
       <NewArrivals />
-      {/* <Bestsellers />
+      <Bestsellers />
       <MiddleAdvertise />
-      <Offers /> */}
+      <Offers />
     </>
   );
 };

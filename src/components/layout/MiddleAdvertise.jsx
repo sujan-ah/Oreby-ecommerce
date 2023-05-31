@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const MiddleAdvertise = () => {
   return (
-    <div className="mt-32">
+    <div className="mb-6 lg:mb-0 lg:mt-32">
       <Container>
         <Link to="#">
           <Images imgsrc="assets/MIddleAdvertise.png" />

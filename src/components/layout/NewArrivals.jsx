@@ -10,11 +10,11 @@ import Slider from "react-slick";
 
 const NewArrivals = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     arrows: true,
     prevArrow: <CgArrowLongLeft />,
     nextArrow: <CgArrowLongRight />,
