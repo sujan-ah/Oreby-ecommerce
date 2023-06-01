@@ -6,6 +6,7 @@ import NewArrivals from "../components/layout/NewArrivals";
 import Bestsellers from "../components/layout/Bestsellers";
 import MiddleAdvertise from "../components/layout/MiddleAdvertise";
 import Offers from "../components/layout/Offers";
+import Footer from "../components/layout/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Bestsellers />
       <MiddleAdvertise />
       <Offers />
+      <Footer />
     </>
   );
 };
