@@ -7,10 +7,10 @@ import Images from "./Images";
 
 const Footer = () => {
   return (
-    <div className="mt-36 bg-[#F5F5F3] py-14">
+    <div className="bg-[#F5F5F3] py-14 lg:mt-36">
       <Container>
-        <Flex className="flex">
-          <div className="w-[10%]">
+        <Flex className="flex flex-wrap lg:flex">
+          <div className="w-[20%] lg:w-[10%]">
             <h4 className="mb-4 font-dm text-base font-bold">MENU</h4>
             <List>
               <ListItem
@@ -40,7 +40,7 @@ const Footer = () => {
               />
             </List>
           </div>
-          <div className="w-[10%]">
+          <div className="ml-5 w-[30%] lg:ml-5 lg:w-[10%] xl:ml-0">
             <h4 className="mb-4 font-dm text-base font-bold">SHOP</h4>
             <List>
               <ListItem
@@ -70,7 +70,7 @@ const Footer = () => {
               />
             </List>
           </div>
-          <div className="w-[10%]">
+          <div className="ml-3 w-[40%] lg:ml-10 lg:w-[10%] xl:ml-0">
             <h4 className="mb-4 font-dm text-base font-bold">HELP</h4>
             <List>
               <ListItem
@@ -100,7 +100,8 @@ const Footer = () => {
               />
             </List>
           </div>
-          <div className="flex w-[30%] justify-center">
+
+          <div className="mt-12 ml-2 flex w-[50%] justify-center sm:ml-0 sm:w-[30%]  lg:ml-10 lg:mt-0 lg:w-[30%] xl:ml-0">
             <div>
               <h4 className="mb-4 font-dm text-base font-bold">
                 (052) 611-5711 <br /> company@domain.com
@@ -110,7 +111,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="w-[40%]">
+          <div className="ml-14 mt-12 w-[30%] sm:ml-44 lg:ml-10 lg:mt-0 lg:w-[20%] xl:ml-0 xl:w-[40%]">
             <Images imgsrc="assets/logo.png" />
           </div>
         </Flex>
