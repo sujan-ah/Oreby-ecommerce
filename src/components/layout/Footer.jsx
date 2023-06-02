@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </Flex>
 
-        <Flex className="mt-16 xl:flex xl:justify-between">
+        <Flex className="xl:jus mt-16 xl:flex xl:justify-between">
           <Flex className="mb-2 flex gap-x-5 text-[#373737] min-[375px]:max-xl:justify-center">
             <FaFacebookF />
             <FaLinkedinIn />
