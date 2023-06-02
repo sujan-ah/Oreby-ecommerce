@@ -30,7 +30,7 @@ const Product = ({ src, badge }) => {
         </div>
       </div>
       <Flex className="mt-4 flex justify-between">
-        <h3 className=" font-dm font-bold md:text-xl lg:text-sm xl:text-xl">
+        <h3 className="font-dm font-bold text-[#262626] md:text-xl lg:text-sm xl:text-xl">
           Basic Crew Neck Tee
         </h3>
         <p className="font-dm text-sm font-normal text-[#767676] md:text-base lg:text-sm xl:text-xl">
